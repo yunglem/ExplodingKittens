@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall
 
 proj2: Game.o Card.o Player.o
-	$(CXX) $(CXXFLAGS) Game.o Card.o Player.o driver.cpp -o proj2
+	$(CXX) $(CXXFLAGS) Game.o Card.o Player.o driver.cpp -o explodingkittens
 
 Card.o: Card.cpp Card.h
 	$(CXX) $(CXXFLAGS) -c Card.cpp
@@ -18,4 +18,4 @@ clean:
 	rm *~ 
 
 run:
-	./proj2
+	./explodingkittens
